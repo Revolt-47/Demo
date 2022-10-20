@@ -7,6 +7,9 @@ export default function Signup(){
 
   async function postData(url = '', data) {
   
+    axios.get('http://localhost:3001/customers').then((response) => {
+     // setbackend(response.data);
+      console.log(response.data);
 
       // Default options are marked with *
   axios({
